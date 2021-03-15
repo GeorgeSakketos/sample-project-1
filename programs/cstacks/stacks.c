@@ -7,7 +7,6 @@
 typedef int* PointerInt;
 
 void stack_stats(Stack stack){
-
     char tempvalue;
     int size = stack_size(stack);
 
@@ -24,7 +23,6 @@ void stack_stats(Stack stack){
 }
 
 void stack_test_values(Stack stack){
-
     PointerInt value = malloc(sizeof(int));
     *value = 10;
 
@@ -34,11 +32,9 @@ void stack_test_values(Stack stack){
     stack_insert_top(stack, value);
 
     stack_insert_top(stack, value2);
-
 }
 
 int main(void){
-
     Stack astack = stack_create(free);
 
     stack_test_values(astack);
