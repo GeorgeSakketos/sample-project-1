@@ -21,7 +21,7 @@ void list_stats(List list){
 
 }
 
-void test_values(List list){
+void list_test_values(List list){
 
     int* value = malloc(sizeof(int));
     *value = 10;
@@ -37,7 +37,7 @@ void test_values(List list){
 int main(void){
     List alist = list_create(free);  //Initialising an empty list
 
-    test_values(alist); // Calls a function that containes all the values to be tested, also helps keeps things in order UwU .
+    list_test_values(alist); // Calls a function that containes all the values to be tested, also helps keeps things in order UwU .
 
     list_stats(alist);
 
